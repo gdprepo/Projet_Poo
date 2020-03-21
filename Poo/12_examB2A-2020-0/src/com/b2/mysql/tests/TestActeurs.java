@@ -7,7 +7,10 @@ public class TestActeurs {
 
 
 	public TestActeurs() {
+		
 		Acteurs resA = new Acteurs(true);
+		resA.toSystemout();
+		System.out.println("\n");		
 		System.out.println(resA.getActeur(1));
 		System.out.println(resA.getActeur(11));
 	}
