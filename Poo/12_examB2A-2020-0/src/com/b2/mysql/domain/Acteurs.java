@@ -32,12 +32,12 @@ public class Acteurs extends ArrayList<Acteur> {
 		this.forEach((Acteur item)->item.toString());
 
 	}
-/*	
+	
 	public Acteur getActeur(int code) {
 		this.forEach(Acteur item)->{
 			if (item.codeActeur==code)
 					return item;
 		});
-	}*/
+	}
 	
 }

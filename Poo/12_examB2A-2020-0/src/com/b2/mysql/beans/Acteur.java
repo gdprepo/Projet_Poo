@@ -6,6 +6,7 @@ public class Acteur {
 	private String m_nom;
 	private Genre m_sexe;
 	private int m_anneeNaissance;
+	public int codeActeur;
 	public Acteur(int code, String prenom, String nom, Genre sexe, int anneeNaissance) {
 		m_code = code;
 		m_prenom = prenom;
