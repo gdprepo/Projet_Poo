@@ -8,8 +8,9 @@ public class main {
 	System.out.println("Hello World");
 	Acteurs resA = new Acteurs(true);
 	
-	resA.toSystemout();
+	//resA.toSystemout();
 	
+	System.out.println(resA.getActeur(2));
 
 }
 }

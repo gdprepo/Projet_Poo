@@ -33,11 +33,16 @@ public class Acteurs extends ArrayList<Acteur> {
 
 	}
 	
-	public Acteur getActeur(int code) {
-		this.forEach((Acteur item)->{
-			if (item.codeActeur==code)
-					return item;
-		});
+	
+	public Acteur getActeur(int nbr) {
+		
+		for(int i = 0;i<this.size(); i++ ) {
+			if (this.get(i).getCode()==nbr) {
+				return this.get(i);
+			}
+		}
+		return null;
+		
 	}
 	
 }
