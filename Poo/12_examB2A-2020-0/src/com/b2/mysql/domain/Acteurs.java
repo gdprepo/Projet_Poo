@@ -11,7 +11,7 @@ public class Acteurs extends ArrayList<Acteur> {
 	public Acteurs(boolean rempli) {
 		if(rempli) {
 			try {
-				MySqlB2 my=new MySqlB2("films");
+				MySqlB2 my=new MySqlB2("localhost", "films", "root", "");
 				ResultSet rs=my.requete("acteurs");
 				while(rs.next()) {
 					int code=rs.getInt("codeActeur");
@@ -26,4 +26,18 @@ public class Acteurs extends ArrayList<Acteur> {
 			}
 		}
 	}
+
+	
+	public void toSystemout() {
+		this.forEach((Acteur item)->item.toString());
+
+	}
+/*	
+	public Acteur getActeur(int code) {
+		this.forEach(Acteur item)->{
+			if (item.codeActeur==code)
+					return item;
+		});
+	}*/
+	
 }

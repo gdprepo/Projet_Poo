@@ -17,9 +17,15 @@ public class Acteur {
 		String titre=m_sexe==Genre.Feminin?"Mme":"M.";
 		return "["+m_code+"] : "+titre+" "+m_prenom+" "+m_nom+" ("+m_anneeNaissance+")";
 	}
-	public int getCode() {
-		return m_code;
+	
+	public String getActeurs(int code) {
+		return m_prenom + ' ' + m_nom;
 	}
+	
+	public String getActeur(int code) {
+		return m_prenom + ' ' + m_nom;
+	}
+	
 	public String getPrenom() {
 		return m_prenom;
 	}
