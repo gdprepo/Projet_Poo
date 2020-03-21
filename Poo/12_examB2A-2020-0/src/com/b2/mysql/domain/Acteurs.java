@@ -29,16 +29,15 @@ public class Acteurs extends ArrayList<Acteur> {
 
 	
 	public void toSystemout() {
-		this.forEach((Acteur item)->item.toString());
+		this.forEach((Acteur item)->System.out.println(item.toString()));
 
 	}
 	
-/*	
-	public Acteur getActeur(code) {
+	public Acteur getActeur(int code) {
 		this.forEach((Acteur item)->{
 			if (item.codeActeur==code)
 					return item;
 		});
-	}*/
+	}
 	
 }
